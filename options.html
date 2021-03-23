@@ -1,0 +1,462 @@
+<!--
+A very basic, dynamic html page for updating and changing the color settings of the court scheduler.
+Allows delete all, save all, import all or export all functions to the saved chrome user data.
+-->
+<!DOCTYPE html>
+<html>
+
+<head><title>InnerCity Tennis Color Options!</title></head>
+
+<body>
+    <center>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="border-collapse:collapse;height:100%;margin:0;padding:0;width:100%">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" style="height:100%;margin:0;padding:0;width:100%">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse">
+                            <tbody>
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;max-width:600px!important;background:#f0f0f0;border-radius: 25px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td valign="top" style="background:#transparent none no-repeat center/cover;background-color:#transparent;background-image:none;background-repeat:no-repeat;background-position:center;background-size:cover;border-top:0;border-bottom:0;padding-top:0px;padding-bottom:0px">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;border-collapse:collapse">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top" style="padding:39px">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+
+
+                                                                                        <img align="center" alt="" src="https://www.innercitytennis.org/sites/all/themes/ICT/ict-horz-4c.png" width="564" style="max-width:600px;padding-bottom:0;display:inline!important;vertical-align:bottom;border:0;height:auto;outline:none;text-decoration:none">
+
+
+                                                                                    </td>
+                                                                                </tr> 
+                                                                            </tbody>
+                                                                        </table>
+                                                                        
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="top" style="padding:5px">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="m_8923732246927907340mcnImageContentContainer" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+
+
+                                                                                          <h2 style="text-align:center;display:block;margin:0;padding:0;color:#222222;font-family:Helvetica;font-size:34px;font-style:normal;font-weight:normal;line-height:150%;letter-spacing:normal"><span style="font-size:24px"><span style="font-family:tahoma,verdana,segoe,sans-serif"><span style="color:#000000">InnerCity Tennis Club Auto Color Options:</span></span></span></h2>
+                                                                                        
+
+                                                                                    </td>
+                                                                                </tr> 
+                                                                            </tbody>
+                                                                        </table>
+                                                                        
+                                                                    </td>
+                                                                </tr>
+																<tr>
+																</tr>
+                                                                <tr>
+                                                                    <td valign="top" style="padding:1px 9px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:18px;text-align:left;"><b>Reserved Courts:</b></td>
+																								<td></td>
+																								<td style="color:#000000; float: right; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;"></td>
+																							</tr>
+																						</table>
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:left;">Border:</td>
+																								<td><input id="reservedBorderColor" class="jscolor" value="ff1fff"></td>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:right;">Inside:</td>
+																								<td style="text-align:right;"><input id="reservedInsideColor" class="jscolor" value="ffccff"></td>
+																							</tr>
+																						</table>
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:18px;text-align:left;"><b>Private Lessons:</b></td>
+																								<td></td>
+																								<td style="color:#000000; float: right; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;"></td>
+																							</tr>
+																						</table>
+
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:left;">Border:</td>
+																								<td><input id="lessonBorderColor" class="jscolor" value="808080"></td>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:right;">Inside:</td>
+																								<td style="text-align:right;"><input id="lessonInsideColor" class="jscolor" value="cccccc"></td>
+																							</tr>
+																						</table>
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:18px;text-align:left;"><b>Season Court Time:</b></td>
+																								<td></td>
+																								<td style="color:#000000; float: right; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;"></td>
+																							</tr>
+																						</table>
+
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:left;">Border:</td>
+																								<td><input id="seasonBorderColor" class="jscolor"></td>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:right;">Inside:</td>
+																								<td style="text-align:right;"><input id="seasonInsideColor" class="jscolor"></td>
+																							</tr>
+																						</table>
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px;padding-bottom:50px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:18px;text-align:left;"><b>Excellence Team:</b></td>
+																								<td style="text-align:left; transform: scale(1.5);"><input type="checkbox" id="excellenceCheck"></td>
+																								<td style="color:#000000; float: right; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;"></td>
+																							</tr>
+																						</table>
+
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px; padding-bottom:10px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+                                                                                            
+                                                                                            
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:18px;text-align:left;"><b>Group Class Type:</b></td>
+																								<td></td>
+																								<td style="color:#000000; float: right; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;"></td>
+																							</tr>
+																						</table>
+
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px;padding-bottom:10px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td>
+																									<table align="center" style="width: 100%;">
+																										<tbody id="groupClassTable"></tbody>
+																									</table>
+																									<div>
+																										<h2>Add New Group Class</h2>
+																										<div>
+																											<table align="center" style="width: 100%;">
+																												<tr>
+																													<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14.5px;text-align:left;">Name:</td>
+																													<td><input name="Name" id="inputName" placeholder="Name/Description" type="text"/></td>
+																													<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:right;">Flags:</td>
+																													<td style="text-align:right;"><input name="flags" id="inputFlags" placeholder="Comma Separated Values!!" type="text"/></td>
+																												</tr>
+																											</table>
+																										</div>
+																										<div style="padding-bottom:10px;">
+																											<table align="center" style="width: 100%;">
+																												<tr>
+																													<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:left;">Border:</td>
+																													<td><input name="border" id="inputBorder" class="jscolor"></td>
+																													<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:right;">Inside:</td>
+																													<td style="text-align:right;"><input name="inside" id="inputInside" class="jscolor"></td>
+																												</tr>
+																											</table>
+																										</div>
+																										<div>
+																											<button id="addNewGroup" type="button">
+																												Add New Entry
+																											</button>
+																										</div>
+																									</div>
+																								</td>
+																							</tr>
+																						</table>
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px;padding-bottom:50px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td>
+																									<div>
+																										<h2>Group Class Options</h2>
+																										
+																										<div style="padding-bottom:5px;">
+																											<input id="optionsGroupClass">
+																										</div>
+																										<div style="padding-bottom:5px;">
+																											<button id="importGroup" type="button">
+																												Import Group Classes
+																											</button>
+																										</div>
+																										<div style="padding-bottom:10px;">
+																											<button id="exportGroup" type="button">
+																												Export Group Classes
+																											</button>
+																										</div>
+																										<div>
+																											<button id="clearGroup" type="button">
+																												CLEAR Group Classes
+																											</button>
+																										</div>
+																									</div>
+																								</td>
+																							</tr>
+																						</table>
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px; padding-bottom:10px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+                                                                                            
+                                                                                            
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:18px;text-align:left;"><b>Program Type:</b></td>
+																								<td></td>
+																								<td style="color:#000000; float: right; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;"></td>
+																							</tr>
+																						</table>
+
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px;padding-bottom:50px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td>
+																									<table align="center" style="width: 100%;">
+																										<tbody id="programTable"></tbody>
+																									</table>
+																									<div>
+																										<h2>Add New Program</h2>
+																										<div>
+																											<table align="center" style="width: 100%;">
+																												<tr>
+																													<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14.5px;text-align:left;">Name:</td>
+																													<td><input name="Name" id="inputNameProgram" placeholder="Name/Description" type="text"/></td>
+																													<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:right;">Flags:</td>
+																													<td style="text-align:right;"><input name="flags" id="inputFlagsProgram" placeholder="Comma Separated Values!!" type="text"/></td>
+																												</tr>
+																											</table>
+																										</div>
+																										<div>
+																											<table align="center" style="width: 100%;">
+																												<tr>
+																													<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:left;">Border:</td>
+																													<td><input name="border" id="inputBorderProgram" class="jscolor"></td>
+																													<td style="color:#000000; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:right;">Inside:</td>
+																													<td style="text-align:right;"><input name="inside" id="inputInsideProgram" class="jscolor"></td>
+																												</tr>
+																											</table>
+																										</div>
+																										<div>
+																											<button id="addNewProgram" type="button">
+																												Add New Entry
+																											</button>
+																										</div>
+																									</div>
+																								</td>
+																							</tr>
+																						</table>
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px;padding-bottom:50px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td>
+																									<div>
+																										<h2>Program Options</h2>
+																										
+																										<div style="padding-bottom:5px;">
+																											<input id="optionsProgram">
+																										</div>
+																										<div style="padding-bottom:5px;">
+																											<button id="importProgram" type="button">
+																												Import Programs
+																											</button>
+																										</div>
+																										<div style="padding-bottom:10px;">
+																											<button id="exportProgram" type="button">
+																												Export Programs
+																											</button>
+																										</div>
+																										<div>
+																											<button id="clearProgram" type="button">
+																												CLEAR Programs
+																											</button>
+																										</div>
+																									</div>
+																								</td>
+																							</tr>
+																						</table>
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+																<tr>
+                                                                    <td valign="top" style="padding:1px 9px; padding-bottom:10px;">
+                                                                        <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center">
+																						<table align="center" style="width: 100%;">
+																							<tr>
+																								<td><div id="status" style="color:#0000FF; font-family:tahoma,verdana,segoe,sans-serif;font-size:14px;text-align:center"></div><button id="save">Save</button></td>
+																							</tr>
+																						</table>
+
+                                                                                    </td>
+                                                                                </tr> 
+																			</tbody>
+																		</table>              
+																	</td>
+																</tr>
+															</tbody>
+														</table> 
+													</td>
+												</tr>
+                                            </tbody>
+                                        </table>   
+									</td>
+								</tr>
+							</tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody><!-- 16 -->
+        </table>
+    </center>
+	<script src="jscolor.js"></script>
+	<script src="options.js"></script>
+</body>
+
+</html>
